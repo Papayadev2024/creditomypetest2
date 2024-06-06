@@ -452,7 +452,7 @@
             <div class="relative py-12 md:pt-32  w-11/12 mx-auto xs:pb-[120px] 2xs:pb-[126px] sm:pb-[280px] lg:pb-[320px]  2xl:pb-[400px] flex flex-col items-center"
                 data-aos="fade-up" data-aos-offset="150">
                 <div class="flex flex-col xl:flex-row gap-6 xl:gap-20 lg:pb-20">
-                    <div class="md:basis-full flex flex-col gap-4 mx-[15%]">
+                    <div class="md:basis-full flex flex-col gap-4 mx-[7%]">
                         <p class="text-azulcreditomype font-fontBold text-text56 leading-tight xl:text-text64 text-center tracking-tighter">
                             Haz crecer <span class="text-white font-fontBook">tus ahorros con la</span> mejor rentabilidad
                         </p>
