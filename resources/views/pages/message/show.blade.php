@@ -7,9 +7,9 @@
             </header>
             <div class="">
         
-                <div class="px-6 pb-6">
+                <div class="px-6 pb-6 overflow-x-auto">
 
-                    <table class="w-full border-collapse my-8">
+                    <table class="w-full border-collapse my-8 ">
                        
                         <tbody>
                             <tr>
