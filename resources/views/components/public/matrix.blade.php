@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Expertos en vesícula, hernias, balón gástrico, cinta gástrica, problema de obesidad e induvicales. Consulta el precio aquí.">
+        content=" ">
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     {{-- fontawesome --}}
