@@ -452,8 +452,8 @@
             <div class="relative py-12 md:pt-32  w-11/12 mx-auto xs:pb-[120px] 2xs:pb-[126px] sm:pb-[280px] lg:pb-[320px]  2xl:pb-[400px] flex flex-col items-center"
                 data-aos="fade-up" data-aos-offset="150">
                 <div class="flex flex-col xl:flex-row gap-6 xl:gap-20 lg:pb-20">
-                    <div class="md:basis-full flex flex-col gap-4 mx-[7%]">
-                        <p class="text-azulcreditomype font-fontBold text-text56 leading-tight xl:text-text64 text-center tracking-tighter">
+                    <div class="md:basis-full flex flex-col gap-4 mx-[13%]">
+                        <p class="text-azulcreditomype font-fontBold text-text52 leading-tight xl:text-text64 text-center tracking-tighter">
                             Haz crecer <span class="text-white font-fontBook">tus ahorros con la</span> mejor rentabilidad
                         </p>
                         <p class="text-white font-fontLight text-center text-text24">Invierte en préstamos  con garantía hipotecaria</p>
@@ -525,15 +525,15 @@
                                                 </select>
                                             </div>
                                             <div class="relative mb-4">
-                                                <textarea name="garantie" style="font-size: 17px; height: auto; min-height: 4rem;" 
-                                                          class=" tracking-tight bg-transparent placeholder:text-text14 mt-1 block w-full border-0 border-b-2 border-gray-400 rounded-none p-3 pr-24 focus:ring-0 focus:border-b-2 focus:border-gray-500 resize-none" 
+                                                <textarea name="garantie" style="font-size: 17px; height: auto; " 
+                                                          class="min-h-28 lg:min-h-14 tracking-tight bg-transparent placeholder:text-text14 mt-1 block w-full border-0 border-b-2 border-gray-400 rounded-none p-3 pr-24 focus:ring-0 focus:border-b-2 focus:border-gray-500 resize-none" 
                                                           placeholder="Tienes una casa o departamento que puedas dejar como garantía hipotecaria?"></textarea>
                                                 <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-verdecreditomype text-text14"></span>
                                             </div>
 
                                             <div class="relative mb-4">
-                                                <textarea name="address" style="font-size: 17px; height: auto; min-height: 4rem;" 
-                                                class=" tracking-tight bg-transparent placeholder:text-text14 mt-1 block w-full border-0 border-b-2 border-gray-400 rounded-none p-3 pr-24 focus:ring-0 focus:border-b-2 focus:border-gray-500 resize-none" 
+                                                <textarea name="address" style="font-size: 17px; height: auto;" 
+                                                class="min-h-32 lg:min-h-14 tracking-tight bg-transparent placeholder:text-text14 mt-1 block w-full border-0 border-b-2 border-gray-400 rounded-none p-3 pr-24 focus:ring-0 focus:border-b-2 focus:border-gray-500 resize-none" 
                                                 placeholder="Distrito de la casa o departamento (debe estar ubicado en lima metropolitana, callao, lima provincia o huancayo)"></textarea>
                                                 <span class="absolute inset-y-0 right-0 flex items-center pr-3 text-verdecreditomype text-text14"></span>
                                             </div>
