@@ -9,12 +9,6 @@
             /* Ancho máximo para el contenedor */
         }
 
-
-
-
-
-
-
         .img-container {
             position: relative;
             width: 100%;
@@ -446,16 +440,15 @@
     <main class="flex flex-col font-outfit">
 
 
-        <section class="bg__image-header text-textWhite" id="acerca">
+        <section class="bg__image-header text-azulcreditomype" id="acerca">
             <div class="relative py-12 md:pt-32  w-11/12 mx-auto xs:pb-[120px] 2xs:pb-[126px] sm:pb-[280px] lg:pb-[320px]  2xl:pb-[400px] flex flex-col items-center"
                 data-aos="fade-up" data-aos-offset="150">
                 <div class="flex flex-col xl:flex-row gap-6 xl:gap-20 lg:pb-20">
-                    <div class="md:basis-full flex flex-col gap-4 mx-[7%]">
-                        <p class="font-fontBook text-text56 leading-tight xl:text-text64 text-center tracking-tighter">
-                            Obtén el <span class="text-verdecreditomype font-fontBold">impulso 💰 financiero</span> que tu
-                            negocio necesita 💸
-
+                    <div class="md:basis-full flex flex-col gap-4 mx-[15%]">
+                        <p class="text-azulcreditomype font-fontBold text-text56 leading-tight xl:text-text64 text-center tracking-tighter">
+                            Haz crecer <span class="text-white font-fontBook">tus ahorros con la</span> mejor rentabilidad
                         </p>
+                        <p class="text-white font-fontLight text-center text-text24">Invierte en préstamos  con garantía hipotecaria</p>
                     </div>
                 </div>
 
@@ -478,39 +471,7 @@
                 <div class="w-full mx-auto flex flex-col md:flex-row justify-center text-center items-start sm:pt-[90px] pb-10  md:pt-20 lg:pb-20 lg:px-20 lg:pt-10"
                     data-aos="fade-up" data-aos-offset="150">
 
-                    <div class="text-azulcreditomype flex flex-col gap-14 basis-1/2 text-left p-5 lg:pr-[8%] pb-12">
-                        <div class="flex flex-col gap-8 md:gap-5">
-                            <h1
-                                class="font-bold fontBold text-[50px] md:text-text36 2md:text-text56 leading-none 2md:leading-tight">
-                                Requisitos <span class="text-verdecreditomype font-fontLight">para solicitar 📄 un </span>
-                                préstamo 💸
-                            </h1>
-                        </div>
-                        <div
-                            class="font-semibold text-text18 xl:text-text22 flex flex-col md:flex-col items-start justify-start gap-5">
-
-                            <h2
-                                class="text-white bg-verdecreditomype rounded-full w-20 h-20 text-text60 flex items-center justify-center font-fontMedium">
-                                1</h2>
-                            <h2 class="text-azulcreditomype text-text24 font-fontLight">Contar con un inmueble ubicado en
-                                Lima Metropolitana, Lima provincias o Callao. Este debe estar inscrito en registros públicos
-                                (SUNARP).</h2>
-
-                        </div>
-
-                        <div
-                            class="font-semibold text-text18 xl:text-text22 flex flex-col md:flex-col items-start justify-start gap-5">
-
-                            <h2
-                                class="text-white bg-verdecreditomype rounded-full w-20 h-20 text-text60 flex items-center justify-center font-fontMedium">
-                                2</h2>
-                            <h2 class="text-azulcreditomype text-text24 font-fontLight">Contar con sustentos de ingresos
-                                mensuales (boletas de pago, recibos por honorarios o reportes tributarios).</h2>
-
-                        </div>
-
-
-                    </div>
+                  
 
                     <div class="image-container flex justify-center items-center basis-1/2 relative ">
                         <!-- md:mt-24 - mt-12  xl:mt-32-->
@@ -590,37 +551,78 @@
                         </div>
                       
                     </div>
+
+                    <div class="text-verdecreditomype flex flex-col gap-14 basis-1/2 text-left p-5 lg:pl-[8%] pb-12">
+                        <div class="flex flex-col gap-8 md:gap-5">
+                            <h1
+                                class="font-bold fontBold text-[50px] md:text-text36 2md:text-text56 leading-none 2md:leading-tight">
+                                ¿Como <span class="text-azulcreditomype font-fontLight">funciona invertir con </span>
+                                Creditomype?
+                            </h1>
+                            <h2 class="text-azulcreditomype font-semibold text-text20 font-fontLight">En Creditomype te conectamos con  emprendedores que buscan  financiamiento, 
+                                logrando que obtengas  un alto retorno de inversión.</h2>
+                        </div>
+                        <div
+                            class="font-semibold text-text18 xl:text-text22 flex flex-col md:flex-col items-start justify-start gap-5">
+
+                            <img class="" src="{{ asset('images/img/iconochicos.png') }}" />
+                               
+                            <h1
+                                class="font-bold fontBold text-[25px] md:text-text26 2md:text-text28 leading-none 2md:leading-tight">
+                                Modo Tradicional
+                            </h1>
+                            <h2 class="text-azulcreditomype text-text20 font-fontLight">Acompañamiento durante todo el proceso,  esto incluye la gestión de cobranza,  
+                                soporte legal y asesoría en la ejecución  de la garantía</h2>
+
+                        </div>
+
+                        <div
+                            class="font-semibold text-text18 xl:text-text22 flex flex-col md:flex-col items-start justify-start gap-5">
+
+                            <img class="" src="{{ asset('images/img/iconomano.png') }}" />
+                            <h1
+                                class="font-bold fontBold text-[25px] md:text-text26 2md:text-text28 leading-none 2md:leading-tight">
+                                Modo Venta de oportunidad
+                            </h1>
+                            <h2 class="text-azulcreditomype text-text20 font-fontLight">Creditomype no realiza ninguna gestión  de cobranzas 
+                                ni asesoría legal después de  constituida la hipoteca.</h2>
+
+                        </div>
+
+
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="flex flex-col gap-10 w-full px-[5%] bg-plomocreditomype py-12 lg:py-24" data-aos="fade-up"
+        <section class="flex flex-col gap-10 w-full px-[5%] bg-fondoverde py-12 lg:py-24" data-aos="fade-up"
             data-aos-offset="150">
             <div class="flex flex-col gap-3 text-center px-[5%] lg:px-[20%]">
                 <h2
                     class="font-bold font-fontBold text-verdecreditomype text-text48 md:text-text52 leading-none md:leading-tight">
-                    Beneficios <span class="text-azulcreditomype font-fontLight">de adquirir un préstamo 💸 con</span>
+                    Beneficios <span class="text-azulcreditomype font-fontLight">de invertir 💸 con</span>
                     garantía hipotecaria 🏡
                 </h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-3">
                 <div class="flex flex-col justify-start  gap-5 text-azulcreditomype rounded-3xl py-4  group relative">
                     <div class="flex flex-col justify-center items-center gap-3 ">
 
                         <div class="relative">
                             <div class="flex justify-center items-center">
-                                <img src="{{ asset('images/img/icono1.png') }}" alt=""
-                                    class="w-16 h-16 rounded-full">
+                                <img src="{{ asset('images/img/iconodolar.png') }}" alt=""
+                                    class="w-18 h-18">
                             </div>
                         </div>
 
                         <div class="font-semibold flex flex-col gap-5 text-center items-center">
-                            <h2 class="font-fontBold text-text29  w-full mx-auto px-5 tracking-tight">
-                                Agilidad ⚡
+                            <h2 class="font-fontBold text-text29  w-full mx-auto px-5 tracking-tight text-verdecreditomype">
+                                Inversión Segura
                             </h2>
                             <p class="font-fontLight text-text20  px-5">
-                                Desembolso en 7 días hábiles.
+                                Inversión respaldada por la hipoteca de  un inmueble reduciendo así el riesgo.
                             </p>
                         </div>
                     </div>
@@ -631,17 +633,17 @@
 
                         <div class="relative">
                             <div class="flex justify-center items-center">
-                                <img src="{{ asset('images/img/icono2.png') }}" alt=""
-                                    class="w-16 h-16 rounded-full">
+                                <img src="{{ asset('images/img/iconorayo.png') }}" alt=""
+                                    class="w-18 h-18">
                             </div>
                         </div>
 
                         <div class="font-semibold flex flex-col gap-5 text-center items-center">
-                            <h2 class="font-fontBold text-text29  w-full mx-auto px-5 tracking-tight">
-                                Acompañamiento 👥
+                            <h2 class="font-fontBold text-text29  w-full mx-auto px-5 tracking-tight text-verdecreditomype">
+                                Retorno Rápido
                             </h2>
                             <p class="font-fontLight text-text20  px-5">
-                                Desde la solicitud hasta el levantamiento de hipoteca.
+                                Inversión de rápido retorno:  Recibes mensualmente capital + interés.
                             </p>
                         </div>
                     </div>
@@ -652,80 +654,17 @@
 
                         <div class="relative">
                             <div class="flex justify-center items-center">
-                                <img src="{{ asset('images/img/icono3.png') }}" alt=""
-                                    class="w-16 h-16 rounded-full">
+                                <img src="{{ asset('images/img/iconoflecha.png') }}" alt=""
+                                    class="w-18 h-18">
                             </div>
                         </div>
 
                         <div class="font-semibold flex flex-col gap-5 text-center items-center">
-                            <h2 class="font-fontBold text-text29  w-full mx-auto px-5 tracking-tight">
-                                Monto del 💰 Préstamo
+                            <h2 class="font-fontBold text-text29  w-full mx-auto px-5 tracking-tight text-verdecreditomype">
+                                Alta Rentabilidad
                             </h2>
                             <p class="font-fontLight text-text20  px-5">
-                                Desde S/.20,000, hasta el 30% del valor del inmueble.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-start  gap-5 text-azulcreditomype rounded-3xl py-4  group relative">
-                    <div class="flex flex-col justify-center items-center gap-3 ">
-
-                        <div class="relative">
-                            <div class="flex justify-center items-center">
-                                <img src="{{ asset('images/img/icono6.png') }}" alt=""
-                                    class="w-16 h-16 rounded-full">
-                            </div>
-                        </div>
-
-                        <div class="font-semibold flex flex-col gap-5 text-center items-center">
-                            <h2 class="font-fontBold text-text29  w-full mx-auto px-5 tracking-tight">
-                                Tasas 📈 Competitivas
-                            </h2>
-                            <p class="font-fontLight text-text20  px-5">
-                                Del 2.8% al 3.5% mensual.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-start  gap-5 text-azulcreditomype rounded-3xl py-4 group relative">
-                    <div class="flex flex-col justify-center items-center gap-3 ">
-
-                        <div class="relative">
-                            <div class="flex justify-center items-center">
-                                <img src="{{ asset('images/img/icono5.png') }}" alt=""
-                                    class="w-16 h-16 rounded-full">
-                            </div>
-                        </div>
-
-                        <div class="font-semibold flex flex-col gap-5 text-center items-center">
-                            <h2 class="font-fontBold text-text29 w-full mx-auto px-5 tracking-tight">
-                                Evaluación 🔍 Flexible
-                            </h2>
-                            <p class="font-fontLight text-text20  px-5">
-                                No revisamos Infocorp.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col justify-start  gap-5 text-azulcreditomype rounded-3xl py-4  group relative">
-                    <div class="flex flex-col justify-center items-center gap-3 ">
-
-                        <div class="relative">
-                            <div class="flex justify-center items-center">
-                                <img src="{{ asset('images/img/icono4.png') }}" alt=""
-                                    class="w-16 h-16 rounded-full">
-                            </div>
-                        </div>
-
-                        <div class="font-semibold flex flex-col gap-5 text-center items-center">
-                            <h2 class="font-fontBold text-text29 w-full mx-auto px-5 tracking-tight">
-                                Confianza ✔️
-                            </h2>
-                            <p class="font-fontLight text-text20  px-5">
-                                Registrados en la SBS (Resolución N° 01144 - 2023)
+                                Rentabilidad superior a la del mercado  (del 20% al 30%).
                             </p>
                         </div>
                     </div>
@@ -735,29 +674,65 @@
         </section>
 
 
-        <section class="bg-verdecreditomype fontosectionmidle">
+        <section class="bg-azulcreditomype fontosectionmidle">
             <div class="flex flex-col gap-5 text-textAzul w-full px-[5%] lg:pl-[5%] " data-aos="fade-up" data-aos-offset="150">
                 <div class="flex flex-col 2md:flex-row gap-10">
-                    <div class="text-azulcreditomype flex flex-col gap-14 basis-1/3 text-left pt-14 lg:py-20">
+                    <div class="text-verdecreditomype flex flex-col gap-14 basis-1/3 text-left pt-14 lg:py-20">
                         <div class="flex flex-col gap-8 md:gap-5">
                             <h1
                                 class="font-bold fontBold text-[50px] md:text-text36 2md:text-text56 leading-none 2md:leading-tight">
-                                Préstamo <br><span class="text-white font-fontLight">con garantía</span>
-                                hipotecaria 🏡
+                                Nuestra trayectoria <span class="text-white font-fontLight">en el mercado</span>
                             </h1>
                         </div>
-                        <div class="font-semibold flex flex-col md:flex-col items-start justify-start gap-5">
-                            <h2 class="text-white text-text24 lg:text-text30 font-fontLight">Creditomype conecta a emprendedores y
-                                empresarios
-                                que buscan financiamiento para sus proyectos, con inversionistas dispuestos a financiar
-                                estos proyectos,
-                                logrando un beneficio para ambos.</h2>
+                        <div class=" flex flex-col md:flex-col items-start justify-start gap-5">
+                            <h2 class="text-white text-text22 font-fontLight">Registrados en la Superintendencia de Banca y Seguros 
+                                (SBS - Resolución N° 01144 - 2023)  Conoce más de nosotros en Creditomype.com/inversiones</h2>
 
                         </div>
                     </div>
 
-                    <div class="basis-2/3 w-full 2md:w-[200px] flex items-center -mt-20 pl-[5%]">
-                        <img class="w-full h-full size-full" src="{{ asset('images/img/bannerchico.png') }}" />
+                    <div class="basis-2/3 w-full 2md:w-[200px] flex items-center p-[5%] lg:pl-[5%]">
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10 lg:mb-0">
+                            
+                            <div class="bg-white py-5 px-3 rounded-t-2xl border-b-[6px] border-b-borderverde">
+                                <h2 class="font-fontBold text-text29  w-full mx-auto px-5 tracking-tight text-verdecreditomype">
+                                    +50 <br>millones
+                                </h2>
+                                <p class="font-fontBook font-semibold text-text20  px-5 text-azulcreditomype tracking-tight">
+                                    Al cierre de febrero del 2024.
+                                </p>
+                            </div>
+
+                            <div class="bg-white py-5 px-3 rounded-t-2xl border-b-[6px] border-b-borderverde">
+                                <h2 class="font-fontBold text-text29  w-full mx-auto px-5 tracking-tight text-verdecreditomype">
+                                    +500 <br>proyectos
+                                </h2>
+                                <p class="font-fontBook font-semibold text-text20  px-5 text-azulcreditomype tracking-tight">
+                                    Concretados con éxito.
+                                </p>
+                            </div>
+
+                            <div class="bg-white py-5 px-3 rounded-t-2xl border-b-[6px] border-b-borderverde">
+                                <h2 class="font-fontBold text-text29  w-full mx-auto px-5 tracking-tight text-verdecreditomype">
+                                    +500 <br>Inversionistas
+                                </h2>
+                                <p class="font-fontBook font-semibold text-text20  px-5 text-azulcreditomype tracking-tight">
+                                    Son parte de nuestra comunidad exclusiva.
+                                </p>
+                            </div>
+
+                            <div class="bg-white py-5 px-3 rounded-t-2xl border-b-[6px] border-b-borderverde">
+                                <h2 class="font-fontBold text-text29  w-full mx-auto px-5 tracking-tight text-verdecreditomype">
+                                    +4 años
+                                </h2>
+                                <p class="font-fontBook font-semibold text-text20  px-5 text-azulcreditomype tracking-tight">
+                                    Operando y siendo el vínculo entre hipotecario  e inversionistas.
+                                </p>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -780,16 +755,19 @@
                         <div
                             class="bg-plomoblanco font-semibold flex flex-col md:flex-col items-start justify-start gap-0 w-4/6 lg:w-2/6 rounded-2xl p-5 relative left-10 lg:left-24">
 
-                            <img class="absolute top-0 right-28 -m-5" src="{{ asset('images/img/triangulo.png') }}" />
+                            <img class="absolute top-0 right-28 -m-5 w-10 lg:18" src="{{ asset('images/img/triangulo.png') }}" />
                             <h2 class="text-azulcreditomype  text-text11 lg:text-text24 font-fontLight">"Credito MYPE me ayudó a expandir
                                 mi tienda en un tiempo récord.
                                 El proceso fue simple y el equipo muy profesional."</h2>
                             <h3 class="text-azulcreditomype text-text18 font-fontBold tracking-tighter mt-4">Maria
                                 Rodríguez,</h3>
-                            <h2 class="text-azulcreditomype text-text18 font-fontLight tracking-tighter">Emprendendora</h2>
+                            <h2 class="text-azulcreditomype text-text18 font-fontLight tracking-tighter">Emprendendora
+                                <div class="bg-azulcreditomype rounded-full absolute bottom-6 right-10 block lg:hidden"><img class=" animate-bounce animate-infinite w-7 h-7"
+                                    src="{{ asset('images/img/play.png') }}" /></div>
+                            </h2>
                         </div>
 
-                        <div class="bg-azulcreditomype rounded-full absolute top-1/2 right-1/2"><img class="w-20 h-20"
+                        <div class="bg-azulcreditomype rounded-full absolute top-1/2 right-1/2 hidden lg:block animate-bounce animate-infinite"><img class="w-20 h-20"
                                 src="{{ asset('images/img/play.png') }}" /></div>
                     </div>
 
@@ -836,10 +814,10 @@
 
         </section>
 
-        <section class="bg-azulcreditomype py-12 lg:py-24 space-y-14" id="proceso">
+        <section class="bg-fondoverdeagua py-12 lg:py-24 space-y-14" id="proceso">
             <div class="flex flex-col md:flex-row w-11/12 mx-auto">
                 <h2
-                    class="tracking-tight font-bold font-fontBold text-white text-text48 md:text-text56 leading-none md:leading-tight">
+                    class="text-azulcreditomype tracking-tight font-bold font-fontBold  text-text48 md:text-text56 leading-none md:leading-tight">
                     Nuestras 📰 <span class="text-verdecreditomype font-fontBold"> notas de prensa
                 </h2>
             </div>
@@ -852,7 +830,7 @@
                         class="font-bold font-fontBold text-text32 text-verdecreditomype leading-none md:leading-tight py-5">
                         ¿Qué requisitos necesito para solicitar un préstamo?
                     </h2>
-                    <p class=" font-fontLight text-text18 xl:text-text20 text-white" data-aos="fade-up"
+                    <p class=" font-fontLight font-semibold text-text18 xl:text-text20 text-azulcreditomype" data-aos="fade-up"
                         data-aos-offset="150">
                         Creditomype conecta a emprendedores y empresarios que buscan financiamiento para sus proyectos,
                         con inversionistas dispuestos a financiar estos proyectos, logrando un beneficio para ambos.
@@ -871,7 +849,7 @@
                             class="font-bold font-fontBold text-text32 text-verdecreditomype leading-none md:leading-tight py-5">
                             ¿Qué requisitos necesito para solicitar un préstamo?
                         </h2>
-                        <p class=" font-fontLight text-text18 xl:text-text20 text-white" data-aos="fade-up"
+                        <p class=" font-fontLight font-semibold text-text18 xl:text-text20 text-azulcreditomype" data-aos="fade-up"
                             data-aos-offset="150">
                             Creditomype conecta a emprendedores y empresarios que buscan financiamiento para sus proyectos,
                             con inversionistas dispuestos a financiar estos proyectos, logrando un beneficio para ambos.
@@ -894,41 +872,66 @@
                 <div class="text-azulcreditomype flex flex-col gap-14 basis-1/2 text-left px-[5%] lg:pr-[8%]">
                     <div class="flex flex-col gap-8 md:gap-5">
                         <h1
-                            class="font-bold fontBold text-[50px] md:text-text36 2md:text-text56 leading-none 2md:leading-tight tracking-tight">
+                            class="font-bold fontBold text-[50px] md:text-text36 2md:text-text40 leading-none 2md:leading-tight tracking-tight">
                             Cobertura <span class="text-verdecreditomype font-fontLight">de Servicio en </span>
                             Todo el Perú 📍
                         </h1>
-                        <h2 class="text-azulcreditomype text-text24 font-semibold font-fontLight">Lima metropolitana, Lima
+                        <h2 class="text-azulcreditomype text-text20 font-semibold font-fontLight">Lima metropolitana, Lima
                             provincias, Ica, Huancayo, Arequipa y Cusco</h2>
                     </div>
                     <div
                         class="font-semibold text-text18 xl:text-text22 flex flex-col md:flex-col items-start justify-start gap-5">
 
-                        <h2 class="text-azulcreditomype text-text24 font-fontBold tracking-tight">Elige tu Sucursal</h2>
+                        <h2 class="text-azulcreditomype text-text24 font-fontBold tracking-tight">Lima</h2>
                         <ul
-                            class="text-azulcreditomype text-text24 font-semibold font-fontLight tracking-tight gap-5 mt-2">
-                            <li class="flex flex-row"><img class="pr-3"
+                            class="text-azulcreditomype text-text20 font-semibold font-fontLight tracking-tight gap-5 mt-2">
+                            <li class="flex flex-row"><img class="w-12 pr-3"
                                     src="{{ asset('images/img/iconocasa.png') }}" />Lima metropolitana</li>
-                            <li class="flex flex-row"><img class="pr-3"
-                                    src="{{ asset('images/img/iconocasa.png') }}" />Lima provincias</li>
-                            <li class="flex flex-row"><img class="pr-3"
-                                    src="{{ asset('images/img/iconocasa.png') }}" />Ica</li>
-                            <li class="flex flex-row"><img class="pr-3"
+                            <li class="flex flex-row"><img class="w-12 pr-3"
+                                    src="{{ asset('images/img/iconocasa.png') }}" />Lima norte (Ancón, Santa rosa, Huacho)</li>
+                            <li class="flex flex-row"><img class="w-12 pr-3"
+                                    src="{{ asset('images/img/iconocasa.png') }}" />Lima provincias:</li>
+                                    <div class="text-text16 pl-[12%]">
+                                        <div>&#8226; Huaral</div>
+                                        <div>&#8226; Huaura (Huacho)</div>
+                                        <div>&#8226; Cañete (Asia, Cerro Azul, Chilca, Mala, Lunahuaná)</div>
+                                    </div>
+                            <li class="flex flex-row"><img class="w-12 pr-3"
                                     src="{{ asset('images/img/iconocasa.png') }}" />Huancayo</li>
-                            <li class="flex flex-row"><img class="pr-3"
+                            <li class="flex flex-row"><img class="w-12 pr-3"
                                     src="{{ asset('images/img/iconocasa.png') }}" />Arequipa</li>
-                            <li class="flex flex-row"><img class="pr-3"
+                            <li class="flex flex-row"><img class="w-12 pr-3"
                                     src="{{ asset('images/img/iconocasa.png') }}" />Cusco</li>
 
                         </ul>
 
                     </div>
+
+                    <div
+                        class="font-semibold text-text18 xl:text-text22 flex flex-col md:flex-col items-start justify-start gap-5">
+
+                        <h2 class="text-azulcreditomype text-text24 font-fontBold tracking-tight">Próximamente</h2>
+                        <ul
+                            class="text-azulcreditomype text-text20 font-semibold font-fontLight tracking-tight gap-5 mt-2">
+                            <li class="flex flex-row"><img class="w-12 pr-3"
+                                    src="{{ asset('images/img/iconocasaamarilla.png') }}" />Trujillo</li>
+                            <li class="flex flex-row"><img class="w-12 pr-3"
+                                    src="{{ asset('images/img/iconocasaamarilla.png') }}" />Huancayo</li>
+                            <li class="flex flex-row"><img class="w-12 pr-3"
+                                    src="{{ asset('images/img/iconocasaamarilla.png') }}" />Arequipa</li>
+                            <li class="flex flex-row"><img class="w-12 pr-3"
+                                    src="{{ asset('images/img/iconocasaamarilla.png') }}" />Cuzco</li>
+         
+                        </ul>
+
+                    </div>
+
                 </div>
 
                 <div class="image-container flex justify-center items-center basis-1/2 relative md:mt-16">
                     <!-- md:mt-24 - mt-12  xl:mt-32-->
                     <div class="hidden md:flex flex-col justify-center h-full items-center">
-                        <img src="{{ asset('images/img/mapa.png') }}" alt="doctor Kewin" class="w-full">
+                        <img src="{{ asset('images/img/mapafinal.png') }}" alt="doctor Kewin" class="w-full">
                     </div>
                     {{-- <div class=" md:absolute bottom-0">
                             <img src="{{ asset('images/img/mapa.png') }}" alt="doctor kevin"

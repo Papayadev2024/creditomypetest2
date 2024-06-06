@@ -1,5 +1,5 @@
 <x-authentication-layout>
-    <h1 class="text-3xl text-[#254F9A] font-outfit text-[40px] font-bold mb-6">{{ __('Hola de vuelta!') }} 🩺</h1>
+    <h1 class="text-3xl text-[#254F9A] font-outfit text-[40px] font-bold mb-6">{{ __('Hola de vuelta!') }}</h1>
     @if (session('status'))
         <div class="mb-4 font-medium text-sm text-green-600">
             {{ session('status') }}

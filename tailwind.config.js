@@ -121,6 +121,8 @@ export default {
                 plomocreditomype: "#F3F3F3",
                 plomoblanco: "#F5F5F5",
                 plomotransparente: "#F9FAFB",
+                fondoverde: "#DBF0E6",
+                fondoverdeagua: "#D8EFE4",
             },
             fontFamily: {
                 fontBold: ["font_Bold"],
@@ -136,6 +138,7 @@ export default {
                 textWhite: "#FFFFFF",
                 textCeleste: "#42BAE2",
                 textAzul: "#254F9A",
+                
 
                 azulcreditomype: "#052453",
                 verdecreditomype: "#33BF82",

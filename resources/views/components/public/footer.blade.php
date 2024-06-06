@@ -17,25 +17,25 @@
                     <div class="flex justify-start 2md:justify-between gap-5 w-full 2md:w-auto">
 
                         @if ($generales->instagram != null)
-                            <a target="_blank" href=" ">
+                            <a target="_blank" href="{{$generales->instagram}}">
                                 <img src="{{ asset('images/img/instagramverde.png') }}" alt="instagram">
                             </a>
                         @endif
 
                         @if ($generales->facebook != null)
-                            <a target="_blank" href=" ">
+                            <a target="_blank" href="{{$generales->facebook}}">
                                 <img src="{{ asset('images/img/facebookverde.png') }}" alt="facebook">
                             </a>
                         @endif
 
                         @if ($generales->linkedin != null)
-                            <a target="_blank" href=" ">
+                            <a target="_blank" href="{{$generales->linkedin}}">
                                 <img src="{{ asset('images/img/linkedverde.png') }}" alt="linkedin">
                             </a>
                         @endif
 
-                        @if ($generales->tiktok != null)
-                            <a target="_blank" href=" ">
+                        @if ($generales->twitter != null)
+                            <a target="_blank" href="{{$generales->twitter}}">
                                 <img src="{{ asset('images/img/twitterverde.png') }}" alt="tiktok">
                             </a>
                         @endif
@@ -65,13 +65,13 @@
                     </p>
                     <div class="flex flex-col gap-2  font-fontLight tracking-tight">
                         <p class="font-normal text-text14 xl:text-text18">
-                            Av. Aramburu 1506, Oficina 404 - Piso 4 Miraflores
+                            {{$generales->address}}
                         </p>
                         <div class="font-normal text-text14 xl:text-text18">
-                            <p>Email: usuario@mundoweb.pe</p>
+                            <p>Email: {{ $generales->email}}</p>
                         </div>
                         <div class="font-normal text-text14 xl:text-text18">
-                            <span>Teléfono:</span> <span>5555-1025</span>
+                            <span>Teléfono:</span> <span>{{ $generales->cellphone}}</span>
                             {{-- <p href="#">{{$generales->office_phone}}</p> --}}
                         </div>
                     </div>

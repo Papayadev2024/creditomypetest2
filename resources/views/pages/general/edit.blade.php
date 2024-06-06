@@ -30,7 +30,7 @@
                                         
                                         <h2 class="md:col-span-5 text-lg font-semibold text-slate-800 dark:text-white" >Información de contacto</h2>
     
-                                        <div class="md:col-span-5">
+                                        {{-- <div class="md:col-span-5">
                                             <label for="title1">Título uno</label>
                                             <div class="relative mb-2 ">
                                                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -38,7 +38,7 @@
                                                 </div>
                                                 <input type="text" id="title1" name="title1" value="{{ $general->title1 }}" class="mt-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com">
                                             </div>
-                                        </div>
+                                        </div> --}}
 
                                         <div class="md:col-span-5">
                                             <label for="title2">Link de Youtube</label>
@@ -50,7 +50,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="md:col-span-5">
+                                        {{-- <div class="md:col-span-5">
                                             <label for="description">Descripción</label>
                                             <div class="relative mb-2 ">
                                                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -58,7 +58,7 @@
                                                 </div>
                                                 <input type="text" id="description" name="description" value="{{ $general->description }}" class="mt-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com">
                                             </div>
-                                        </div>
+                                        </div> --}}
 
                                         <div class="md:col-span-5">
                                             <label for="address">Dirección de la empresa</label>
@@ -155,7 +155,7 @@
                                         </div>
                                         
     
-                                        <div class="md:col-span-5">
+                                        {{-- <div class="md:col-span-5">
                                             <label for="schedule">Horario de Oficina</label>
                                             <div class="relative mb-2">
                                                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -163,7 +163,7 @@
                                                 </div>
                                                 <input type="text" id="schedule" name="schedule" value="{{ $general->schedule }}" class="mt-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Horario de Oficina">
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     
                                      
                                         <h2 class="md:col-span-5 text-lg font-semibold text-slate-800 mt-2 dark:text-white" >Redes Sociales</h2>

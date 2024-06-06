@@ -110,7 +110,7 @@
             </a>
           </li>
 
-          <!-- Servicios -->
+          {{-- <!-- Servicios -->
           <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['servicios'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['servicios'])) {{ 'hover:text-slate-200' }} @endif"
@@ -128,10 +128,10 @@
                   class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Servicios</span>
               </div>
             </a>
-          </li>
+          </li> --}}
 
 
-          <!-- Testimony -->
+          {{-- <!-- Testimony -->
           <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['testimonios'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['testimonios'])) {{ 'hover:text-slate-200' }} @endif"
@@ -149,9 +149,9 @@
                   class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Testimonios</span>
               </div>
             </a>
-          </li>
+          </li> --}}
 
-
+{{-- 
           <!-- Category -->
           <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['categorias'])) {{ 'bg-slate-900' }} @endif">
@@ -171,10 +171,10 @@
               </div>
             </a>
           </li>
-
+ --}}
 
          
-
+{{-- 
           <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['logos'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['logos'])) {{ 'hover:text-slate-200' }} @endif"
@@ -193,7 +193,7 @@
                   Cliente</span>
               </div>
             </a>
-          </li>
+          </li> --}}
 
           
 

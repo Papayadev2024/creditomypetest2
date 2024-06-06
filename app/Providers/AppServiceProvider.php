@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\General;
 use Illuminate\Support\ServiceProvider;
 use App\Models\Message;
 use Illuminate\Support\Facades\View;
@@ -27,6 +28,14 @@ class AppServiceProvider extends ServiceProvider
             $mensajes = Message::where('is_read', '!=', 1 )->where('status', '!=', 0)->count(); // Suponiendo que tienes un modelo Footer y un método footerData() en él
             // Pasar los datos a la vista
             $view->with('mensajes', $mensajes);
+        });
+
+
+        View::composer('components.public.footer', function ($view) {
+            // Obtener los datos del footer
+            $datosgenerales = General::all(); // Suponiendo que tienes un modelo Footer y un método footerData() en él
+            // Pasar los datos a la vista
+            $view->with('datosgenerales', $datosgenerales);
         });
     }
 }

@@ -77,7 +77,7 @@
                     {{-- <img class="object-cover object-center w-full h-full" src="{{ asset('images/auth-image.jpg') }}" width="760" height="1024" alt="Authentication image" />
                     <img class="absolute top-1/4 left-0 -translate-x-1/2 ml-8 hidden lg:block" src="{{ asset('images/auth-decoration.png') }}" width="218" height="224" alt="Authentication decoration" /> --}}
 
-                    <img class="object-cover object-center w-full h-full" src="{{ asset('images/auth_image-doctor.png') }}" width="760" height="1024" alt="Authentication image" />
+                    <img class="object-cover object-center w-full h-full" src="{{ asset('images/img/loginfoto.png') }}" width="760" height="1024" alt="Authentication image" />
                     {{-- <img class="absolute top-1/4 left-0 -translate-x-1/2 ml-8 hidden lg:block" src="{{ asset('images/auth-decoration.png') }}" width="218" height="224" alt="Authentication decoration" /> --}}
                 </div>
 
