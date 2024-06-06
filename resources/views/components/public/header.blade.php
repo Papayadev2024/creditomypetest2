@@ -9,11 +9,11 @@
         </div>
         <div class="hidden lg:flex justify-center items-center gap-10 font-semibold font-fontMedium text-text16 xl:text-text18">
             <nav class="flex justify-center items-center gap-10 text-center" data-aos="fade-up" data-aos-offset="150">
-                <a href="{{route('index')}}" class="text-verdecreditomype">Solicitar Prestamo</a>
-                <a href="{{route('index').'#acerca'}}">Beneficios</a>
-                <a href="{{route('index').'#proceso'}}">Testimonios</a>
-                <a href="{{route('index').'#proceso'}}">Prensa</a>
-                <a href="{{route('index').'#proceso'}}">Cobertura</a>
+                <a href="{{route('index').'#prestamo'}}" class="text-verdecreditomype">Solicitar Prestamo</a>
+                <a href="{{route('index').'#beneficios'}}">Beneficios</a>
+                <a href="{{route('index').'#testimonio'}}">Testimonios</a>
+                <a href="{{route('index').'#prensa'}}">Prensa</a>
+                <a href="{{route('index').'#cobertura'}}">Cobertura</a>
             </nav>
         </div>
     </div>

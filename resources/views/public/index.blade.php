@@ -473,7 +473,7 @@
 
                   
 
-                    <div class="image-container flex justify-center items-center basis-1/2 relative ">
+                    <div class="image-container flex justify-center items-center basis-1/2 relative " id="prestamo">
                         <!-- md:mt-24 - mt-12  xl:mt-32-->
                         <div class="flex flex-col justify-end h-full items-end p-5 lg:p-8 bg-plomotransparente rounded-3xl ">
 
@@ -552,7 +552,7 @@
                       
                     </div>
 
-                    <div class="text-verdecreditomype flex flex-col gap-14 basis-1/2 text-left p-5 lg:pl-[8%] pb-12">
+                    <div id="beneficios" class="text-verdecreditomype flex flex-col gap-14 basis-1/2 text-left p-5 lg:pl-[8%] pb-12">
                         <div class="flex flex-col gap-8 md:gap-5">
                             <h1
                                 class="font-bold fontBold text-[50px] md:text-text36 2md:text-text56 leading-none 2md:leading-tight">
@@ -739,7 +739,7 @@
         </section>
 
 
-        <section class="bannervideo">
+        <section class="bannervideo" id="testimonio">
             <div class="flex flex-col gap-5 text-textAzul w-full" data-aos="fade-up" data-aos-offset="150">
                 <div class="flex flex-col 2md:flex-row gap-10">
 
@@ -814,7 +814,7 @@
 
         </section>
 
-        <section class="bg-fondoverdeagua py-12 lg:py-24 space-y-14" id="proceso">
+        <section class="bg-fondoverdeagua py-12 lg:py-24 space-y-14" id="prensa">
             <div class="flex flex-col md:flex-row w-11/12 mx-auto">
                 <h2
                     class="text-azulcreditomype tracking-tight font-bold font-fontBold  text-text48 md:text-text56 leading-none md:leading-tight">
@@ -865,7 +865,7 @@
             </div>
         </section>
 
-        <section class="pt-12">
+        <section class="pt-12" id="cobertura">
             <div class="w-full mx-auto flex flex-col md:flex-row justify-center text-center items-start sm:pt-[90px] pb-10 md:pt-20 lg:px-20 lg:pt-10"
                 data-aos="fade-up" data-aos-offset="150">
 
