@@ -984,7 +984,7 @@
 
         <section>
             <div class="bg-[#F5F5F5] font-poppins py-12 lg:py-20 texturapreguntas">
-                <div class="relative bg-[#F5F5F5] px-6  ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10">
+                <div class="relative px-6  ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10">
                     <div class="mx-auto px-5">
                         <div class="flex flex-col items-center ">
                             <h2
