@@ -418,6 +418,13 @@
                 background-image: url({{ asset('images/img/fondoheader.png') }}) !important;
             }
 
+            .fontosectionmidle {
+            background-position: top right!important;
+            background-repeat: no-repeat!important;
+            background-size: contain!important;
+            background-image: url({{ asset('images/img/texturasection.png') }})!important;
+            }
+
         }
 
         .bg__image-header {
@@ -428,7 +435,7 @@
         }
 
         .fontosectionmidle {
-            background-position: top right;
+            background-position: bottom right;
             background-repeat: no-repeat;
             background-size: contain;
             background-image: url({{ asset('images/img/texturasection.png') }});
