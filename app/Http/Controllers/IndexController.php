@@ -119,204 +119,183 @@ class IndexController extends Controller
             ];
             $request->validate($reglasValidacion, $mensajes);
             $formlanding = Message::create($data);
-            // $this->envioCorreo($formlanding);
-            // $this->envioCorreoInterno($formlanding);
-            // return redirect()->route('landingaplicativos', $formlanding)->with('mensaje','Mensaje enviado exitoso')->with('name', $request->nombre);
+            $this->envioCorreoAdmin($formlanding);
+            $this->envioCorreoCliente($formlanding);
+            
             return response()->json(['message' => 'Mensaje enviado con exito']);
         } catch (ValidationException $e) {
             return response()->json(['message' => $e->validator->errors()], 400);
         }
     }
 
-    private function envioCorreo($data)
+    private function envioCorreoAdmin($data)
     {
-        $name = $data['full_name'];
-        $mail = EmailConfig::config($name);
-        $generales = General::all()->first();
-        $instagram = $generales->instagram;
+        $name = "Administrador";
+        $mensaje = "tienes un nuevo mensaje - Landing Credito";
+        $mail = EmailConfig::config($name, $mensaje);
+        $emailadmin = "diego.martinez.r@tecsup.edu.pe";
+        $baseUrl = 'https://' . $_SERVER['HTTP_HOST'] . '/mail';
+        $baseUrllink = 'https://' . $_SERVER['HTTP_HOST'] . '/';
 
         try {
-            $mail->addAddress($data['email']);
+            $mail->addAddress($emailadmin);
             $mail->Body =
                 '
-            <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mundo web</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <table
-        style="
-          width: 600px;
-          margin: 0 auto;
-          text-align: center;
-          background-image: url(https://cirugiasdelima.com/mail/FondoMailing.png);
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-        "
-      >
-        <thead>
-          <tr>
-            <th
-              style="
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                margin: 40px;
-              "
-            >
-              <img
-                src="https://cirugiasdelima.com/mail/logo.png"
-                alt="kewin"
-              />
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <p
-                style="
-                  color: #ffffff;
-                  font-weight: 500;
-                  font-size: 18px;
-                  text-align: center;
-                  width: 500px;
-                  margin: 0 auto;
-                  padding: 20px 0;
-                  font-family: Montserrat, sans-serif;
-                "
-              >
-                <span style="display: block">Hola </span>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p
-                style="
-                  color: #ffffff;
-                  font-size: 40px;
-                  line-height: 20px;
-                  font-family: Montserrat, sans-serif;
-                "
-              >
-                <span style="display: block">' .
-                $name .
-                ' </span>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p
-                style="
-                  color: #ffffff;
-                  font-size: 40px;
-                  line-height: 70px;
-                  font-family: Montserrat, sans-serif;
-                  font-weight: bold;
-                "
-              >
-                ¡Gracias
-                <span style="color: #ffffff">por escribirnos!</span>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p
-                style="
-                  color: #ffffff;
-                  font-weight: 500;
-                  font-size: 18px;
-                  text-align: center;
-                  width: 500px;
-                  margin: 0 auto;
-                  padding: 20px 0;
-                  font-family: Montserrat, sans-serif;
-                "
-              >
-                En breve estaremos comunicandonos contigo.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a
-                target="_blank"
-                href="https://cirugiasdelima.com/"
-                style="
-                  text-decoration: none;
-                  background-color: #fdfefd;
-                  color: #254f9a;
-                  padding: 16px 20px;
-                  display: inline-flex;
-                  justify-content: center;
-                  border-radius: 10px;
-                  align-items: center;
-                  gap: 10px;
-                  font-weight: 600;
-                  font-family: Montserrat, sans-serif;
-                  font-size: 16px;
-                  margin-bottom:20px;
-                "
-              >
-                <span>Visita nuestra web</span>
-              </a>
-            </td>
-          </tr>
-
-          <tr>
-              <td style="padding: 10px 0">
-              <a href="https://' .
-                htmlspecialchars($generales->instagram, ENT_QUOTES, 'UTF-8') .
-                '" target="_blank"><img src="https://cirugiasdelima.com/mail/instagram0.png" alt="instagram" /></a>
-              <a href="https://' .
-                htmlspecialchars($generales->facebook, ENT_QUOTES, 'UTF-8') .
-                '" target="_blank"><img src="https://cirugiasdelima.com/mail/facebook0.png" alt="facebook" /></a>
-              <a href="https://' .
-                htmlspecialchars($generales->linkedin, ENT_QUOTES, 'UTF-8') .
-                '" target="_blank"><img src="https://cirugiasdelima.com/mail/linkedin0.png" alt="linkedin" /></a>
-              <a href="https://' .
-                htmlspecialchars($generales->tiktok, ENT_QUOTES, 'UTF-8') .
-                '" target="_blank"><img src="https://cirugiasdelima.com/mail/tiktok0.png" alt="linkedin" /></a>
-              <a href="https://api.whatsapp.com/send?phone=' .
-                htmlspecialchars($generales->whatsapp, ENT_QUOTES, 'UTF-8') .
-                '&text=' .
-                htmlspecialchars($generales->mensaje_whatsapp, ENT_QUOTES, 'UTF-8') .
-                '" target="_blank"><img src="https://cirugiasdelima.com/mail/whatsapp_1.png" alt="whatsapp" /></a>
-              </td>
-          </tr>
-          <tr>
-              <td style="text-align: right; padding-right: 80px">
-                  <img src="https://cirugiasdelima.com/mail/banner.png" alt="mundo web" style="width: 80%" />
-              </td>
-          </tr>
-</tbody>
-</table>
-</main>
-</body>
-
-</html>
+                <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Credito Mype Inversion</title>
+                  <link rel="preconnect" href="https://fonts.googleapis.com" />
+                  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                  <link
+                    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+                    rel="stylesheet"
+                  />
+                  <style>
+                    @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+                    * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                    }
+                    body {
+                      font-family: Montserrat, sans-serif;
+                    }
+                </style>
+                </head>
+                <body>
+                  <main>
+                    <table
+                      style="
+                        width: 600px;
+                        margin: 0 auto;
+                        text-align: center;
+                        background-image: url(' . $baseUrl . '/Fondo.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                      "
+                    >
+                      <thead>
+                        <tr>
+                          <th
+                            style="
+                              display: flex;
+                              flex-direction: row;
+                              justify-content: center;
+                              align-items: center;
+                              margin: 20px auto;
+                              padding: 0 200px;
+                              text-align:center;
+                            "
+                          >
+                          <a href="'. $baseUrllink . '" target="_blank" style="text-align:center" ><img src="' . $baseUrl . '/logo.png" alt="creditomype" /></a>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <p
+                              style="
+                                color: #ffffff;
+                                font-size: 40px;
+                                line-height: 60px;
+                                font-family: Montserrat, sans-serif;
+                                font-weight: bold;
+                              "
+                            >
+                              Nuevo
+                              <span style="color: #ffffff">mensaje!</span>
+                            </p>
+                          </td>
+                        </tr>          
+                        <tr>
+                          <td>
+                            <p
+                              style="
+                                color: #ffffff;
+                                font-weight: 500;
+                                font-size: 18px;
+                                text-align: center;
+                                width: 500px;
+                                margin: 0 auto;
+                                padding: 30px 0;
+                                font-family: Montserrat, sans-serif;
+                              "
+                            >
+                              Hola ' . $name . '<br>
+                              Tienes un nuevo mensaje en tu bandeja.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a
+                              target="_blank"
+                              href="'. $baseUrllink . '"
+                              style="
+                                text-decoration: none;
+                                background-color: #052453;
+                                color: white;
+                                padding: 16px 20px;
+                                display: inline-flex;
+                                justify-content: center;
+                                border-radius: 10px;
+                                align-items: center;
+                                gap: 10px;
+                                font-weight: 600;
+                                font-family: Montserrat, sans-serif;
+                                font-size: 16px;
+                                margin-bottom: 350px;
+                              "
+                            >
+                              <span>Visita nuestra web</span>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a
+                              href="https://web.facebook.com/Creditomype"
+                              target="_blank"
+                              style="padding: 0 5px 30px 0; display: inline-block"
+                            >
+                             <img src="' . $baseUrl . '/facebook.png" alt="Facebook"
+                            /></a>
+              
+                            <a
+                              href="https://www.instagram.com/creditomype/"
+                              target="_blank"
+                              style="padding: 0 5px 30px 0; display: inline-block"
+                            >
+                             <img src="' . $baseUrl . '/instagram.png" alt="Instagram"
+                            /></a>
+              
+                            <a
+                              href="https://www.linkedin.com/company/creditomype/"
+                              target="_blank"
+                              style="padding: 0 5px 30px 0; display: inline-block"
+                            >
+                              <img src="' . $baseUrl . '/linkedin.png" alt="LinkedIn"
+                            /></a>
+              
+                            <a
+                              href="https://www.youtube.com/@prestamocongarantiahipotecaria"
+                              target="_blank"
+                              style="padding: 0 5px 30px 0; display: inline-block"
+                            >
+                              <img src="' . $baseUrl . '/youtube.png" alt="YouTube"
+                            /></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </main>
+                </body>
+              </html>
+              
 ';
             $mail->isHTML(true);
             $mail->send();
@@ -331,99 +310,116 @@ class IndexController extends Controller
 
 
 
-    private function envioCorreoInterno($data)
+    private function envioCorreoCliente($data)
     {
-        $name = $data['full_name'];
-        $mail = EmailConfig::config($name);
-        $emailCliente = General::all()->first();
+      $name = $data['full_name'];
+      $mensaje = "Gracias por comunicarte con CreditoMype";
+      $mail = EmailConfig::config($name, $mensaje);
+      $baseUrl = 'https://' . $_SERVER['HTTP_HOST'] . '/mail';
+      $baseUrllink = 'https://' . $_SERVER['HTTP_HOST'] . '/';
     
         try {
-            $mail->addAddress($emailCliente->email);
+            $mail->addAddress($data['email']);
             $mail->Body =
                 '
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mundo web</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
-    <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    </style>
-</head>
-
-<body>
-    <main>
-        <table style="
+                <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Credito Mype Inversion</title>
+                  <link rel="preconnect" href="https://fonts.googleapis.com" />
+                  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                  <link
+                    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+                    rel="stylesheet"
+                  />
+                  <style>
+                    @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+                    * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                    }
+                    body {
+                      font-family: Montserrat, sans-serif;
+                    }
+                </style>
+                </head>
+                <body>
+                  <main>
+                    <table
+                      style="
                         width: 600px;
                         margin: 0 auto;
                         text-align: center;
-                        background-image: url(https://cirugiasdelima.com/mail/FondoMailing.png);
+                        background-image: url(' . $baseUrl . '/Fondo.png);
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: cover;
-                      ">
-            <thead>
-                <tr>
-                    <th style="
+                      "
+                    >
+                      <thead>
+                        <tr>
+                          <th
+                            style="
                               display: flex;
                               flex-direction: row;
                               justify-content: center;
                               align-items: center;
-                              margin: 40px;
-                            ">
-                        <img src="https://cirugiasdelima.com/mail/logo.png" alt="kewin" />
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <p style="
+                              margin: 20px auto;
+                              padding: 0 200px;
+                              text-align:center;
+                            "
+                          >
+                          <a href="'. $baseUrllink . '" target="_blank" style="text-align:center" ><img src="' . $baseUrl . '/logo.png" alt="creditomype" /></a>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <p
+                              style="
+                                color: #ffffff;
+                                font-size: 40px;
+                                line-height: 60px;
+                                font-family: Montserrat, sans-serif;
+                                font-weight: bold;
+                              "
+                            >
+                             ¡Gracias
+                              <span style="color: #ffffff">por escribirnos!</span>
+                            </p>
+                          </td>
+                        </tr>          
+                        <tr>
+                          <td>
+                            <p
+                              style="
                                 color: #ffffff;
                                 font-weight: 500;
                                 font-size: 18px;
                                 text-align: center;
                                 width: 500px;
                                 margin: 0 auto;
-                                padding: 20px 0;
+                                padding: 30px 0;
                                 font-family: Montserrat, sans-serif;
-                              ">
-                            <span style="display: block">Hola Dr. Kewin</span>
-                            <span style="display: block">Tienes un nuevo mensaje de:</span>
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p style="
-                                color: #ffffff;
-                                font-size: 40px;
-                                line-height: 20px;
-                                font-family: Montserrat, sans-serif;
-
-                                margin: 30px 0;
-                              ">
-                            <span style="display: block">' .
-                $name .
-                ' </span>
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a target="_blank" href="https://cirugiasdelima.com/" style="
+                              "
+                            >
+                              Hola ' . $name . '<br>
+                              En breve estaremos comunicandonos contigo.
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a
+                              target="_blank"
+                              href="'. $baseUrllink . '"
+                              style="
                                 text-decoration: none;
-                                background-color: #fdfefd;
-                                color: #254f9a;
+                                background-color: #052453;
+                                color: white;
                                 padding: 16px 20px;
                                 display: inline-flex;
                                 justify-content: center;
@@ -433,22 +429,53 @@ class IndexController extends Controller
                                 font-weight: 600;
                                 font-family: Montserrat, sans-serif;
                                 font-size: 16px;
-                              ">
-                            <span>Visita nuestra web</span>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: right; padding-right: 80px">
-                        <img src="https://cirugiasdelima.com/mail/banner.png" alt="mundo web" style="width: 80%" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
-</body>
-
-</html>
+                                margin-bottom: 350px;
+                              "
+                            >
+                              <span>Visita nuestra web</span>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a
+                              href="https://web.facebook.com/Creditomype"
+                              target="_blank"
+                              style="padding: 0 5px 30px 0; display: inline-block"
+                            >
+                             <img src="' . $baseUrl . '/facebook.png" alt="Facebook"
+                            /></a>
+              
+                            <a
+                              href="https://www.instagram.com/creditomype/"
+                              target="_blank"
+                              style="padding: 0 5px 30px 0; display: inline-block"
+                            >
+                             <img src="' . $baseUrl . '/instagram.png" alt="Instagram"
+                            /></a>
+              
+                            <a
+                              href="https://www.linkedin.com/company/creditomype/"
+                              target="_blank"
+                              style="padding: 0 5px 30px 0; display: inline-block"
+                            >
+                              <img src="' . $baseUrl . '/linkedin.png" alt="LinkedIn"
+                            /></a>
+              
+                            <a
+                              href="https://www.youtube.com/@prestamocongarantiahipotecaria"
+                              target="_blank"
+                              style="padding: 0 5px 30px 0; display: inline-block"
+                            >
+                              <img src="' . $baseUrl . '/youtube.png" alt="YouTube"
+                            /></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </main>
+                </body>
+              </html>
 
 ';
             $mail->isHTML(true);
