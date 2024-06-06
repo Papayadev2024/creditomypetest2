@@ -19,6 +19,14 @@
             height: auto;
         }
 
+        #iframeContainer {
+        display: none; /* Oculto por defecto */
+        }
+
+        #iframeContainer.show {
+            display: flex; /* Mostrar como flex para centrar el iframe */
+        }
+
         .logo-container {
             position: absolute;
             bottom: 12px;
@@ -457,7 +465,7 @@
                     <div class="relative contenedor_video">
                         {{-- <p>{{$texto_despues_igual = substr(strrchr($generales->title2, '='), 1);}}</p>
                         <p>{{$texto_despues_igual}}</p> --}}
-                        <iframe src="https://www.youtube.com/embed/{{ substr(strrchr($generales->title2, '='), 1) }}"
+                        <iframe src="https://www.youtube.com/embed/KO85z8J9i8o"
                             title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen
@@ -466,23 +474,22 @@
                     </div>
                 </div>
             </div>
-
-            <div class="pt-[210px] 3md:pt-[200px] lg:pt-[268px] xl:pt-[335px] 2xl:pt-[350px]">
+            
+            <div class="pt-[210px] 3md:pt-[200px] lg:pt-[268px] xl:pt-[335px] 2xl:pt-[350px]" >
                 <div class="w-full mx-auto flex flex-col md:flex-row justify-center text-center items-start sm:pt-[90px] pb-10  md:pt-20 lg:pb-20 lg:px-20 lg:pt-10"
                     data-aos="fade-up" data-aos-offset="150">
 
                   
-
-                    <div class="image-container flex justify-center items-center basis-1/2 relative " id="prestamo">
+                    
+                    <div class="image-container flex justify-center items-center basis-1/2 relative " id="prestamo" >
                         <!-- md:mt-24 - mt-12  xl:mt-32-->
-                        <div class="flex flex-col justify-end h-full items-end p-5 lg:p-8 bg-plomotransparente rounded-3xl ">
+                        <div class="flex flex-col justify-end h-full items-end p-5 lg:p-8 bg-plomotransparente rounded-3xl " >
 
                             <h2
                                 class="text-left font-bold font-fontMedium text-azulcreditomype text-text32 leading-none md:leading-tight">
                                 Obtén el <span class="text-verdecreditomype">impulso financiero</span>
                                 que tu negocio necesita
                             </h2>
-
                             
                                 <div class="bg-transparent flex items-center justify-center min-h-screen w-full mt-3 ">
                                     <div class="bg-transparent   w-full ">
@@ -552,7 +559,7 @@
                       
                     </div>
 
-                    <div id="beneficios" class="text-verdecreditomype flex flex-col gap-14 basis-1/2 text-left p-5 lg:pl-[8%] pb-12">
+                    <div  class="text-verdecreditomype flex flex-col gap-14 basis-1/2 text-left p-5 lg:pl-[8%] pb-12">
                         <div class="flex flex-col gap-8 md:gap-5">
                             <h1
                                 class="font-bold fontBold text-[50px] md:text-text36 2md:text-text56 leading-none 2md:leading-tight">
@@ -597,7 +604,7 @@
         </section>
 
         <section class="flex flex-col gap-10 w-full px-[5%] bg-fondoverde py-12 lg:py-24" data-aos="fade-up"
-            data-aos-offset="150">
+            data-aos-offset="150" id="beneficios">
             <div class="flex flex-col gap-3 text-center px-[5%] lg:px-[20%]">
                 <h2
                     class="font-bold font-fontBold text-verdecreditomype text-text48 md:text-text52 leading-none md:leading-tight">
@@ -762,13 +769,25 @@
                             <h3 class="text-azulcreditomype text-text18 font-fontBold tracking-tighter mt-4">Maria
                                 Rodríguez,</h3>
                             <h2 class="text-azulcreditomype text-text18 font-fontLight tracking-tighter">Emprendendora
-                                <div class="bg-azulcreditomype rounded-full absolute bottom-6 right-10 block lg:hidden"><img class=" animate-bounce animate-infinite w-7 h-7"
+                                <div class="bg-azulcreditomype rounded-full absolute bottom-6 right-10 block lg:hidden play-button cursor-pointer"><img class=" animate-bounce animate-infinite w-7 h-7"
                                     src="{{ asset('images/img/play.png') }}" /></div>
                             </h2>
                         </div>
 
-                        <div class="bg-azulcreditomype rounded-full absolute top-1/2 right-1/2 hidden lg:block animate-bounce animate-infinite"><img class="w-20 h-20"
+                        <div class="bg-azulcreditomype rounded-full absolute top-1/2 right-1/2 hidden lg:block animate-bounce animate-infinite play-button2 cursor-pointer"><img class="w-20 h-20"
                                 src="{{ asset('images/img/play.png') }}" /></div>
+                    </div>
+
+                    <div id="iframeContainer" class="hidden absolute inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+                        <iframe id="youtubeIframe" 
+                                src="https://www.youtube.com/embed/R50W2gIOxRw"
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                                class="w-full aspect-video sm:w-[500px] sm:h-[283px] md:w-[500px] md:h-[282px] lg:w-[1000px] lg:h-[550px] 2xl:w-[1000px] 2xl:h-[565px]">
+                        </iframe>
                     </div>
 
                 </div>
@@ -1327,6 +1346,49 @@
                     secondCircle.setAttribute("fill", "#42BAE2");
                 }
             };
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const playButton = document.querySelector('.play-button');
+            const iframeContainer = document.getElementById('iframeContainer');
+            const iframe = document.getElementById('youtubeIframe');
+
+            playButton.addEventListener('click', function() {
+                iframeContainer.classList.add('show');
+                // Autoplay el video
+                const src = iframe.src;
+                iframe.src = src + "?autoplay=1";
+            });
+
+            // Opcional: Cerrar el iframe al hacer clic fuera de él
+            iframeContainer.addEventListener('click', function(e) {
+                if (e.target === iframeContainer) {
+                    iframe.src = iframe.src.replace("?autoplay=1", ""); // Detener el video
+                    iframeContainer.classList.remove('show');
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const playButton = document.querySelector('.play-button2');
+            const iframeContainer = document.getElementById('iframeContainer');
+            const iframe = document.getElementById('youtubeIframe');
+
+            playButton.addEventListener('click', function() {
+                iframeContainer.classList.add('show');
+                // Autoplay el video
+                const src = iframe.src;
+                iframe.src = src + "?autoplay=1";
+            });
+
+            // Opcional: Cerrar el iframe al hacer clic fuera de él
+            iframeContainer.addEventListener('click', function(e) {
+                if (e.target === iframeContainer) {
+                    iframe.src = iframe.src.replace("?autoplay=1", ""); // Detener el video
+                    iframeContainer.classList.remove('show');
+                }
+            });
         });
     </script>
 @stop
