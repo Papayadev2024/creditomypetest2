@@ -466,7 +466,7 @@
 @stop
 {{-- style="background-image: url({{asset('images/img/Hero_Doctor_mobile.png')}})" --}}
 @section('content')
-    <main class="flex flex-col font-outfit">
+    <main class="flex flex-col font-outfit pt-24 lg:pt-28">
 
 
         <section class="bg__image-header text-azulcreditomype" id="acerca">

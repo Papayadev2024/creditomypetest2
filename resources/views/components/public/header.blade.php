@@ -1,5 +1,5 @@
 <header
-    class="bg-transparent bg__servicios-fondo font-outfit w-full">
+    class="bg-transparent bg__servicios-fondo font-outfit w-full h-24 lg:h-28 fixed top-0 bg-white z-60">
     <div class="text-azulcreditomype flex justify-between items-center w-11/12 mx-auto pt-7 pb-5">
         <div class="flex justify-start items-center w-60 xl:w-auto" data-aos="fade-up" data-aos-offset="150">
             <a href="{{route('index')}}">
