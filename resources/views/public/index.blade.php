@@ -919,64 +919,37 @@
                         Cobertura <span class="text-verdecreditomype">de Servicio en </span>
                         Todo el Perú 📍
                     </h1>
-                    <h2 class="text-azulcreditomype text-text20 font-semibold font-fontLight">Lima metropolitana, Lima
+                    <h2 class="text-azulcreditomype text-text24 font-semibold font-fontLight">Lima metropolitana, Lima
                         provincias, Ica, Huancayo, Arequipa y Cusco</h2>
                 </div>
                 <div
                     class="font-semibold text-text18 xl:text-text22 flex flex-col md:flex-col items-start justify-start gap-5">
 
-                    <h2 class="text-azulcreditomype text-text24 font-fontBold tracking-tight">Lima</h2>
+                    <h2 class="text-azulcreditomype text-text24 font-fontBold tracking-tight">Elige tu Sucursal</h2>
                     <ul
-                        class="text-azulcreditomype text-text20 font-semibold font-fontLight tracking-tight gap-5 mt-2">
-                        <li class="flex flex-row"><img class="w-12 pr-3"
+                        class="text-azulcreditomype text-text24 font-semibold font-fontLight tracking-tight gap-5 mt-2">
+                        <li class="flex flex-row"><img class="pr-3"
                                 src="{{ asset('images/img/iconocasa.png') }}" />Lima metropolitana</li>
-                        <li class="flex flex-row"><img class="w-12 pr-3"
-                                src="{{ asset('images/img/iconocasa.png') }}" />Lima norte (Ancón, Santa rosa, Huacho)</li>
-                        <li class="flex flex-row"><img class="w-12 pr-3"
-                                src="{{ asset('images/img/iconocasa.png') }}" />Lima provincias:</li>
-                                <div class="text-text16 pl-[12%]">
-                                    <div>&#8226; Huaral</div>
-                                    <div>&#8226; Huaura (Huacho)</div>
-                                    <div>&#8226; Cañete (Asia, Cerro Azul, Chilca, Mala, Lunahuaná)</div>
-                                </div>
-                        <li class="flex flex-row"><img class="w-12 pr-3"
+                        <li class="flex flex-row"><img class="pr-3"
+                                src="{{ asset('images/img/iconocasa.png') }}" />Lima provincias</li>
+                        <li class="flex flex-row"><img class="pr-3"
+                                src="{{ asset('images/img/iconocasa.png') }}" />Ica</li>
+                        <li class="flex flex-row"><img class="pr-3"
                                 src="{{ asset('images/img/iconocasa.png') }}" />Huancayo</li>
-                        <li class="flex flex-row"><img class="w-12 pr-3"
+                        <li class="flex flex-row"><img class="pr-3"
                                 src="{{ asset('images/img/iconocasa.png') }}" />Arequipa</li>
-                        <li class="flex flex-row"><img class="w-12 pr-3"
+                        <li class="flex flex-row"><img class="pr-3"
                                 src="{{ asset('images/img/iconocasa.png') }}" />Cusco</li>
-                         <li class="flex flex-row"><img class="w-12 pr-3"
-                                    src="{{ asset('images/img/iconocasa.png') }}" />Ica</li>
 
                     </ul>
 
                 </div>
-
-                {{-- <div
-                    class="font-semibold text-text18 xl:text-text22 flex flex-col md:flex-col items-start justify-start gap-5">
-
-                    <h2 class="text-azulcreditomype text-text24 font-fontBold tracking-tight">Próximamente</h2>
-                    <ul
-                        class="text-azulcreditomype text-text20 font-semibold font-fontLight tracking-tight gap-5 mt-2">
-                        <li class="flex flex-row"><img class="w-12 pr-3"
-                                src="{{ asset('images/img/iconocasaamarilla.png') }}" />Trujillo</li>
-                        <li class="flex flex-row"><img class="w-12 pr-3"
-                                src="{{ asset('images/img/iconocasaamarilla.png') }}" />Huancayo</li>
-                        <li class="flex flex-row"><img class="w-12 pr-3"
-                                src="{{ asset('images/img/iconocasaamarilla.png') }}" />Arequipa</li>
-                        <li class="flex flex-row"><img class="w-12 pr-3"
-                                src="{{ asset('images/img/iconocasaamarilla.png') }}" />Cuzco</li>
-     
-                    </ul>
-
-                </div> --}}
-
             </div>
 
             <div class="image-container flex justify-center items-center basis-1/2 relative md:mt-16">
                 <!-- md:mt-24 - mt-12  xl:mt-32-->
                 <div class="p-8 flex flex-col justify-center h-full items-center">
-                    <img src="{{ asset('images/img/mapafinal.png') }}" alt="doctor Kewin" class="w-full">
+                    <img src="{{ asset('images/img/mapa.png') }}" alt="doctor Kewin" class="w-full">
                 </div>
                 {{-- <div class=" md:absolute bottom-0">
                         <img src="{{ asset('images/img/mapa.png') }}" alt="doctor kevin"
