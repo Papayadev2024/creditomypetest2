@@ -488,8 +488,8 @@
             </div>
             <div class="flex flex-col gap-6 xl:gap-20">
                 <div class="md:basis-full flex flex-col gap-4">
-                    <p class="font-fontBold text-text44 lg:text-text52 text-center leading-none tracking-tighter text-azulcreditomype">
-                        Haz crecer <span class="text-white ">tus ahorros con la mejor</span> rentabilidad
+                    <p class="font-fontBold text-text44 lg:text-text52 text-center leading-none tracking-tighter text-white">
+                        Haz crecer <span class="text-verdecreditomype">tus ahorros con la mejor</span> rentabilidad
 
                     </p>
                 </div>
