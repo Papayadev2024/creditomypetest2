@@ -17,27 +17,21 @@
                     <div class="flex justify-start 2md:justify-between gap-5 w-full 2md:w-auto">
 
                        
-                            <a target="_blank" href="">
-                                <img src="{{ asset('images/img/instagramverde.png') }}" alt="instagram">
-                            </a>
-                       
+                        <a target="_blank" href="https://www.instagram.com/creditomype/">
+                            <img src="{{ asset('images/img/instagramverde.png') }}" alt="instagram">
+                        </a>
+                    
 
-                        
-                            <a target="_blank" href="">
-                                <img src="{{ asset('images/img/facebookverde.png') }}" alt="facebook">
-                            </a>
-                       
+                   
+                        <a target="_blank" href="https://www.facebook.com/Creditomype">
+                            <img src="{{ asset('images/img/facebookverde.png') }}" alt="facebook">
+                        </a>
+                   
 
-                       
-                            <a target="_blank" href="">
-                                <img src="{{ asset('images/img/linkedverde.png') }}" alt="linkedin">
-                            </a>
-                       
-
-                      
-                            <a target="_blank" href="">
-                                <img src="{{ asset('images/img/twitterverde.png') }}" alt="tiktok">
-                            </a>
+                  
+                        <a target="_blank" href="https://www.linkedin.com/company/creditomype">
+                            <img src="{{ asset('images/img/linkedverde.png') }}" alt="linkedin">
+                        </a>
                       
 
                     </div>
@@ -65,13 +59,13 @@
                     </p>
                     <div class="flex flex-col gap-2  font-fontLight tracking-tight">
                         <p class="font-normal text-text14 xl:text-text18">
-                            {{$generales->address}}
+                            Avenida Javier Prado Este 560, San Isidro. Oficina 1102
                         </p>
                         <div class="font-normal text-text14 xl:text-text18">
-                            <p>Email: {{ $generales->email}}</p>
+                            <p>Email: hola@creditomype.com</p>
                         </div>
                         <div class="font-normal text-text14 xl:text-text18">
-                            <span>Teléfono:</span> <span>{{ $generales->cellphone}}</span>
+                            <span>Teléfono: +51 913 883 322</span>
                             {{-- <p href="#">{{$generales->office_phone}}</p> --}}
                         </div>
                     </div>

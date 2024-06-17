@@ -502,9 +502,9 @@
 
     <section>
         <div class="mt-10">
-            <div class="w-full mx-auto flex flex-col md:flex-row justify-center text-center items-start sm:pt-[90px] pb-10  md:pt-20 lg:pb-20 lg:px-20 lg:pt-10"
+            <div class="w-full mx-auto flex flex-col xl:flex-row justify-center text-center items-start sm:pt-[90px] pb-10  md:pt-20 lg:pb-10 xl:px-20 lg:pt-10"
                     data-aos="fade-up" data-aos-offset="150">
-                    <div class="image-container flex justify-center items-center basis-1/2 relative " id="prestamo" >
+                    <div class="image-container flex justify-center items-center basis-1/2 relative order-2 xl:order-1 mx-auto" id="prestamo" >
                         <!-- md:mt-24 - mt-12  xl:mt-32-->
                         <div class="flex flex-col justify-end h-full items-end p-5 lg:p-8 bg-plomotransparente rounded-3xl " >
 
@@ -582,7 +582,7 @@
                       
                     </div>
 
-                    <div  class="text-verdecreditomype flex flex-col gap-14 basis-1/2 text-left p-5 lg:pl-[8%] pb-12">
+                    <div  class="text-verdecreditomype flex flex-col gap-14 basis-1/2 text-left p-5 xl:pl-[6%] pb-12 order-1 xl:order-2">
                         <div class="flex flex-col gap-8 md:gap-5">
                             <h1
                                 class="font-bold font-fontBold  text-text44 lg:text-text52 leading-none lg:leading-tight tracking-tighter">
@@ -592,33 +592,34 @@
                             <h2 class="text-azulcreditomype font-semibold text-text20 font-fontLight">En Creditomype te conectamos con  emprendedores que buscan  financiamiento, 
                                 logrando que obtengas  un alto retorno de inversión.</h2>
                         </div>
-                        <div
-                            class="font-semibold text-text18 xl:text-text22 flex flex-col md:flex-col items-start justify-start gap-5">
+                        <div class="flex flex-col md:flex-row xl:flex-col gap-16">
+                            <div
+                                class="font-semibold text-text18 xl:text-text22 flex flex-col md:flex-col items-start justify-start gap-5">
 
-                            <img class="" src="{{ asset('images/img/iconochicos.png') }}" />
-                               
-                            <h1
-                                class="font-bold fontBold text-[25px] md:text-text26 2md:text-text28 leading-none 2md:leading-tight">
-                                Modo Tradicional
-                            </h1>
-                            <h2 class="text-azulcreditomype text-text20 font-fontLight">Acompañamiento durante todo el proceso,  esto incluye la gestión de cobranza,  
-                                soporte legal y asesoría en la ejecución  de la garantía</h2>
+                                <img class="" src="{{ asset('images/img/iconochicos.png') }}" />
+                                
+                                <h1
+                                    class="font-bold fontBold text-[25px] md:text-text26 2md:text-text28 leading-none 2md:leading-tight">
+                                    Modo Tradicional
+                                </h1>
+                                <h2 class="text-azulcreditomype text-text20 font-fontLight">Acompañamiento durante todo el proceso,  esto incluye la gestión de cobranza,  
+                                    soporte legal y asesoría en la ejecución  de la garantía</h2>
 
+                            </div>
+
+                            <div
+                                class="font-semibold text-text18 xl:text-text22 flex flex-col md:flex-col items-start justify-start gap-5">
+
+                                <img class="" src="{{ asset('images/img/iconomano.png') }}" />
+                                <h1
+                                    class="font-bold fontBold text-[25px] md:text-text26 2md:text-text28 leading-none 2md:leading-tight">
+                                    Modo Venta de oportunidad
+                                </h1>
+                                <h2 class="text-azulcreditomype text-text20 font-fontLight">Creditomype no realiza ninguna gestión  de cobranzas 
+                                    ni asesoría legal después de  constituida la hipoteca.</h2>
+
+                            </div>
                         </div>
-
-                        <div
-                            class="font-semibold text-text18 xl:text-text22 flex flex-col md:flex-col items-start justify-start gap-5">
-
-                            <img class="" src="{{ asset('images/img/iconomano.png') }}" />
-                            <h1
-                                class="font-bold fontBold text-[25px] md:text-text26 2md:text-text28 leading-none 2md:leading-tight">
-                                Modo Venta de oportunidad
-                            </h1>
-                            <h2 class="text-azulcreditomype text-text20 font-fontLight">Creditomype no realiza ninguna gestión  de cobranzas 
-                                ni asesoría legal después de  constituida la hipoteca.</h2>
-
-                        </div>
-
 
                     </div>
 
@@ -696,7 +697,7 @@
                                 Alta Rentabilidad
                             </h2>
                             <p class="font-fontLight text-text20  px-5">
-                                Rentabilidad superior a la del mercado  (del 20% al 30%).
+                                Rentabilidad superior a la del mercado  (del 20% al 40%).
                             </p>
                         </div>
                     </div>
@@ -944,12 +945,14 @@
                                 src="{{ asset('images/img/iconocasa.png') }}" />Arequipa</li>
                         <li class="flex flex-row"><img class="w-12 pr-3"
                                 src="{{ asset('images/img/iconocasa.png') }}" />Cusco</li>
+                         <li class="flex flex-row"><img class="w-12 pr-3"
+                                    src="{{ asset('images/img/iconocasa.png') }}" />Ica</li>
 
                     </ul>
 
                 </div>
 
-                <div
+                {{-- <div
                     class="font-semibold text-text18 xl:text-text22 flex flex-col md:flex-col items-start justify-start gap-5">
 
                     <h2 class="text-azulcreditomype text-text24 font-fontBold tracking-tight">Próximamente</h2>
@@ -966,7 +969,7 @@
      
                     </ul>
 
-                </div>
+                </div> --}}
 
             </div>
 
