@@ -542,12 +542,12 @@
                                         
                                                 <select name="monto" class="bg-transparent mt-1 block w-full border-0 border-b-2 border-gray-400 rounded-none p-3 pr-24 focus:ring-0 focus:border-b-2 focus:border-gray-500">
                                                     <option class="option" value="">Seleccione el monto</option>
-                                                    <option class="option" value="20 mil a 50 mil">20 mil a 50 mil soles</option>
-                                                    <option class="option" value="50 mil a 100 mil soles">50 mil a 100 mil soles</option>
-                                                    <option class="option" value="100 mil a 200 mil soles">100 mil a 200 mil soles</option>
-                                                    <option class="option" value="200 mil a 300 mil soles">200 mil a 300 mil soles</option>
-                                                    <option class="option" value="300 mil a 400 mil soles">300 mil a 400 mil soles</option>
-                                                    <option class="option" value="400 mil a 500 mil soles">400 mil a 500 mil soles</option>
+                                                    <option class="option" value="S/20,000.00 a S/50,000.00">S/20,000.00 a S/50,000.00</option>
+                                                    <option class="option" value="S/50,000.00 a S/100,000.00">S/50,000.00 a S/100,000.00</option>
+                                                    <option class="option" value="S/100,000.00 a S/200,000.00">S/100,000.00 a S/200,000.00</option>
+                                                    <option class="option" value="S/200,000.00 a S/300,000.00">S/200,000.00 a S/300,000.00</option>
+                                                    <option class="option" value="S/300,000.00 a S/400,000.00">S/300,000.00 a S/400,000.00</option>
+                                                    <option class="option" value="S/400,000.00 a S/500,000.00">S/400,000.00 a S/500,000.00</option>
                                                 </select>
                                             </div>
                                             <div class="relative mb-4">
