@@ -478,7 +478,7 @@
             
                 <div class="relative contenedor_video">
 
-                    <iframe src="https://www.youtube.com/embed/KO85z8J9i8o" title="YouTube video player"
+                    <iframe src="https://www.youtube.com/embed/bxWJ_eIv77c" title="YouTube video player"
                         frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen
