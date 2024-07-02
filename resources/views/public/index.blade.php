@@ -792,9 +792,9 @@
 
                         <img class="absolute top-0 right-28 -m-5 w-10 lg:18"
                             src="{{ asset('images/img/triangulo.png') }}" />
-                        <h2 class="text-azulcreditomype  text-text11 lg:text-text20 font-fontLight">"Gracias a Creditomype pudimos solventar algunas deudas y repotenciar el negocio. Es muy personalizado, agradecerles por la confianza y preocuparse por los pequeños y micro empresarios."</h2>
-                        <h3 class="text-azulcreditomype text-text18 font-fontBold tracking-tighter mt-4">Heber Matos Salcedo,</h3>
-                        <h2 class="text-azulcreditomype text-text18 font-fontLight tracking-tighter">Emprendedor
+                        <h2 class="text-azulcreditomype  text-text11 lg:text-text20 font-fontLight">"Fernando Villarán, de 43 años y administrador de empresas, comparte su experiencia de inversión en crédito. Tiene más de 6 a 7 años de experiencia en inversiones, comenzando en bancos y cajas municipales antes de buscar mayor rentabilidad en otros lugares."</h2>
+                        <h3 class="text-azulcreditomype text-text18 font-fontBold tracking-tighter mt-4">Fernando Villarán,</h3>
+                        <h2 class="text-azulcreditomype text-text18 font-fontLight tracking-tighter">Inversionista
                             <div
                                 class="bg-azulcreditomype rounded-full absolute bottom-6 right-10 block lg:hidden play-button cursor-pointer">
                                 <img class=" animate-bounce animate-infinite w-7 h-7"
@@ -812,7 +812,7 @@
 
         <div id="iframeContainer"
             class="hidden absolute inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-            <iframe id="youtubeIframe" src="https://www.youtube.com/embed/R50W2gIOxRw" title="YouTube video player"
+            <iframe id="youtubeIframe" src="https://www.youtube.com/embed/nHOcu-eiMs0" title="YouTube video player"
                 frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
@@ -864,7 +864,7 @@
         <div class="flex flex-col md:flex-row w-11/12 mx-auto">
             <h2
                 class="text-azulcreditomype tracking-tight font-bold font-fontBold  text-text48 md:text-text56 leading-none md:leading-tight">
-                Nuestras 📰 <span class="text-verdecreditomype font-fontBold"> notas de prensa
+                Nuestras 📰 <span class="text-verdecreditomype font-fontBold"> notas de inversiones
             </h2>
         </div>
         <div class="flex flex-col md:flex-row w-11/12 mx-auto gap-10">
