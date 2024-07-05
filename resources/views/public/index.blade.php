@@ -870,7 +870,7 @@
         <div class="flex flex-col md:flex-row w-11/12 mx-auto gap-10">
             <div class="basis-1/2 flex flex-col" data-aos="fade-up" data-aos-offset="150">
 
-                <img src="{{ asset('images/img/seniorcm.png') }}" />
+                <img src="{{ asset('images/img/senor.png') }}" />
 
                 <h2
                     class="font-bold font-fontBold text-text32 text-verdecreditomype leading-none md:leading-tight py-5">
@@ -881,7 +881,7 @@
                     Creditomype conecta a emprendedores y empresarios que buscan financiamiento para sus proyectos,
                     con inversionistas dispuestos a financiar estos proyectos, logrando un beneficio para ambos.
                 </p>
-                <a class="text-verdecreditomype font-fontMedium text-text20 mt-3 flex">
+                <a target="_blank" href="https://gestion.pe/publirreportaje/como-invertir-y-hacer-crecer-tu-capital-de-manera-responsable-y-con-bajo-riesgo-noticia/" class="text-verdecreditomype font-fontMedium text-text20 mt-3 flex">
                     Leer más <img class="flex flex-col h-5 mt-1.5" src="{{ asset('images/img/flechaicon.png') }}" />
                 </a>
 
@@ -889,7 +889,7 @@
             <div class="basis-1/2 flex flex-col" data-aos="fade-up" data-aos-offset="150">
                 <div class="basis-1/2 flex flex-col" data-aos="fade-up" data-aos-offset="150">
 
-                    <img src="{{ asset('images/img/senoracm.png') }}" />
+                    <img src="{{ asset('images/img/senora.png') }}" />
 
                     <h2
                         class="font-bold font-fontBold text-text32 text-verdecreditomype leading-none md:leading-tight py-5">
@@ -900,7 +900,7 @@
                         Creditomype conecta a emprendedores y empresarios que buscan financiamiento para sus proyectos,
                         con inversionistas dispuestos a financiar estos proyectos, logrando un beneficio para ambos.
                     </p>
-                    <a class="text-verdecreditomype font-fontMedium text-text20 mt-3 flex">
+                    <a target="_blank" href="https://gestion.pe/publirreportaje/como-invertir-y-hacer-crecer-tu-capital-de-manera-responsable-y-con-bajo-riesgo-noticia/" class="text-verdecreditomype font-fontMedium text-text20 mt-3 flex">
                         Leer más <img class="flex flex-col h-5 mt-1.5"
                             src="{{ asset('images/img/flechaicon.png') }}" />
                     </a>
